@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Netflix-Clone - Watch Movies, TV Shows online</title>
+        <meta name="description" content="This is a netflix clone created for the project given by CodersCave">
+        <meta name="keywords" content="movies, Netflix, TV shows, featured, production">
+        <link rel="icon" href="static/netflix-logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="index.js" defer></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <nav class="header">
+                <div class="logo">
+                    <img src="static/netflix-logo2-.png" height="60px" alt="logo">
+                    <ul class="logo">    
+                        <li><a href="#movies">Movies</a></li>
+                        <li><a href="#newmovies">New Movies</a></li>
+                        <li><a href="#trailers">Trailers</a></li>
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#enjoy">Enjoy</a></li>
+                        <li><a href="#faq">FAQ's</a></li>
+                    </ul>
+                </div>
+                <div class="end">
+                    <select id="dropdown" name="language" onchange="changeLanguage()">
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Tamil">Tamil</option>
+                    </select>
+                    <button id="signin">Sign In</button>
+                </div>
+            </nav>
+            <br><br><br><br><br><br><br><br>
+            <div class="content">
+                <h1 id="title"><b>For Exciting movies and TV Shows!!</b></h1>
+                <h2><b>Watch anywhere. Cancel anytime<b></h2>
+                <h3> Ready to watch? Enter your email to create or restart your membership</h3>
+                <div class="input">
+                    <input id="email" type="email" placeholder="Email Address" required/>
+                    <button id="submit" onclick="https://www.netflix.com/in/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fyouraccount"><b><h3>Get Started ></h3></b></button>
+                </div>
+                <br><br><br><br>
+            </div>
+        </div>
+        <br>
+        <div class="movies" id="movies">
+            <div class="container">
+                <div class="contentmovies">
+                    <h2>|HOT MOVIES</h2>
+                    <p>Check out the all time favorites.</p>
+                    <table>
+                        <tr>
+                            <td width="300"><a href="https://www.netflix.com/in/title/81098494"><img src="static/e2.webp" height="250px"></a></td>
+                            <td width="600"><b>Extraction 2</b><br><br>
+                                2023 <b>|</b> Maturity Rating:A <b>|</b> 2h 3m <b>|</b> Action<br>
+                                <p>Back from the brink of death, highly skilled commando Tyler Rake takes on another dangerous mission: saving the imprisoned family of a ruthless gangster.<br><br>
+                                Starring: Chris Hemsworth, Golshifteh Farahani,Tornike Gogrichiani</p></td>
+                            <td width="300"><a href="https://www.marvel.com/movies/avengers-endgame"><img src="static/ae.webp" height="250px"></a></td>
+                            <td width="600"><b>Avengers: Endgame</b><br><br>
+                                2019 <b>|</b> Maturity Rating:U/A <b>|</b> 3h 1m <b>|</b> Superhero <b>|</b> Action <b>|</b> Dark Humour <b>|</b> Fantasy<br>
+                                <p>After the devastating events of the Infinity War, the Avengers assemble once more to reverse Thanos' actions and restore balance to the universe.<br><br>
+                                Starring: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth</p></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.warnerbros.com/movies/wonka"><img src="static/w.webp" height="250px"></a></td>
+                            <td><b>Wonka</b><br><br>
+                                2023 <b>|</b> Maturity Rating:U/A <b>|</b> 2h 25m <b>|</b> Adventure <b>|</b> Comedy <b>|</b> Fantasy<br>
+                                <p>The story will focus specifically on a young Willy Wonka and how he met the Oompa-Loompas on one of his earliest adventures.<br><br>
+                                Starring: Timothée Chalamet, Olivia Colman, Hugh Grant</p></td>
+                            <td><a href="https://www.netflix.com/in/title/81322579"><img src="static/hs.webp" height="250px"></a></td>
+                            <td><b>Hidden strike</b><br><br>
+                            2023<b>|</b> Maturity Rating:U/A <b>|</b> 1h 43m <b>|</b> Action<br>
+                            <p>Two elite soldiers must escort civilians through a gauntlet of gunfire and explosions in this film starring Jackie Chan and John Cena.<br><br>
+                            Starring: Jackie Chan,John Cena,Pilou Asbæk</p></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.kravenmovie.com/"><img src="static/kh.webp" height="250px"></a></td>
+                            <td><b>Kraven the hunter</b><br><br>
+                            2024<b>|</b> Maturity Rating:R <b>|</b> 2h 45m <b>|</b> Action <b>|</b> Adventure<br>
+                            <p>Russian immigrant Sergei Kravinoff is on a mission to prove that he is the greatest hunter in the world.<br><br>
+                            Starring: Aaron Taylor-Johnson, Russell Crowe, Christopher Abbott
+                            </p></td>
+                            <td><a href="https://www.hypnoticthemovie.com/"><img src="static/hip.webp" height="250px"></a></td>
+                            <td><b>Hypnotic</b><br><br>
+                            2023<b>|</b> Maturity Rating:R <b>|</b> 1h 33m <b>|</b> Mystery <b>|</b> Action <b>|</b> Thriller<br>
+                            <p>A detective investigates a mystery involving his missing daughter and a secret government program.<br><br>
+                            Starring: Ben Affleck, Alice Braga, JD Pardo
+                            </p></td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="newmovies" id="newmovies">
+            <h2>|New releases</h2>
+            <p>New releases from the house.</p>
+            <div class="slider-container2">
+                <div class="slider2">
+                    <a href="https://www.marvel.com/movies/guardians-of-the-galaxy-volume-3"><img src="static/gog.webp" height="265px"></a>
+                    <a href="https://www.evildeadrisemovie.net/"><img src="static/ed.webp" height="250px"></a>
+                    <a href="https://tv.apple.com/us/movie/ghosted/umc.cmc.6nodv9rf3ltfk2ar3pfc8hced"><img src="static/gh.webp" height="250px"></a>
+                    <a href="https://www.netflix.com/in/title/81212842"><img src="static/mm.webp" height="250px"></a>
+                    <a href="https://www.netflix.com/in/title/81098494"><img src="static/e2.webp" height="250px"></a>
+                    <a href="https://www.warnerbros.com/movies/shazam-fury-gods"><img src="static/sza.jpg" height="250px"></a>
+                    <a href="https://www.warnerbros.com/movies/creed-iii"><img src="static/cr.webp" height="250px"></a>
+                    <a href="https://www.warnerbros.com/movies/blue-beetle"><img src="static/bb.webp" alt="Blue beetle" height="250px"></a>
+                    <a href="https://www.oppenheimermovie.com/"><img src="static/OP.webp" height="250px" alt="Openheimer"></a>
+                    <a href="https://www.warnerbros.com/movies/barbie"><img src="static/b.webp" height="250px" alt="Barbie"></a>
+                    <a href="https://www.fastxmovie.com/"><img src="static/fx.webp" height="250px" alt="Fast X"></a>
+                    <a href="https://www.thesupermariobros.movie/"><img src="static/smb.webp" height="250px" alt="Super mario bros"></a>
+                    <a href="https://www.suzume-movie.com/home/"><img src="static/sz.webp" height="250px" alt="Suzume"></a>
+                    <a href="https://www.warnerbros.com/movies/flash"><img src="static/fls.webp" height="250px" alt="Flash"></a>
+                </div>        
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="trailers" id="trailers">
+            <h2>|New Trailers</h2>
+            <p>Watch and experience our new cinematic world.</p>
+            <div class="newtrailers">
+                <div class="slider-nav">
+                    <button class="slider-buttons" onclick="prevSlide()"><</button>
+                    <div class="slider-container">
+                        <div class="slides">
+                            <div class="slide">
+                                <iframe src="https://www.youtube.com/embed/mqqft2x_Aa4" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="slide">
+                                <iframe src="https://www.youtube.com/embed/_YUzQa_1RCE" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="slide">
+                                <iframe src="https://www.youtube.com/embed/otNh9bTjXWg" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-buttons" onclick="nextSlide()">></button>
+                </div>
+            </div>
+            <br><br>
+        </div>
+        <br>
+        <div class="collections" id="collections">
+            <br>
+            <h2>|Collections</h2>
+            <p>Our curated collection spans a diverse range of genres and mediums, each project a masterpiece in its own right. From captivating films and enthralling animations
+                to immersive games and thought-provoking narratives, every endeavor is a testament to our unwavering commitment to storytelling and artistry.</p>
+            <br><br>
+            <div class="containers">
+                <div class="contents">
+                    <table class="contents" width="1200">
+                        <tr>
+                            <td width="250"><img src="static/e2.webp" height="250px"></td>
+                            <td width="250"><img src="static/nun.webp" height="250px"></td>
+                            <td width="250"><img src="static/ae.webp" height="250px"></td>
+                            <td width="250"><img src="static/fls.webp" height="250px"></td>
+                            <td width="250"><img src="static/mm.webp" height="250px"></td>
+                        </tr>
+                        <tr>
+                            <td><h2>Action</h2></td>
+                            <td><h2>Horror</h2></td>
+                            <td><h2>Marvel</h2></td>
+                            <td><h2>DC</h2></td>
+                            <td><h2>Mystery</h2></td>
+                        </tr>
+                        <tr>
+                            <td><img src="static/w.webp" height="250px"></td>
+                            <td><img src="static/pib.webp" height="250px"></td>
+                            <td><img src="static/mh.webp" height="250px"></td>
+                            <td><img src="static/kh.webp" height="250px"></td>
+                            <td><img src="static/fx.webp" height="250px"></td>
+                        </tr>
+                        <tr>
+                            <td><h2>Fantasy</h2></td>
+                            <td><h2>Animation</h2></td>
+                            <td><h2>Series</h2></td>
+                            <td><h2>Superhero</h2></td>
+                            <td><h2>Sequels</h2></td>
+                        </tr>
+                        <tr>
+                            <td><img src="static/bm.webp" height="250px"></td>
+                            <td><img src="static/ds.webp" height="250px"></td>
+                            <td><img src="static/ij.webp" height="250px"></td>
+                            <td><img src="static/cr.webp" height="250px"></td>
+                            <td><img src="static/cod.jpg" height="250px"></td>
+                        </tr>
+                        <tr>
+                            <td><h2>PC Games</h2></td>
+                            <td><h2>Anime</h2></td>
+                            <td><h2>Adventure</h2></td>
+                            <td><h2>Biography</h2></td>
+                            <td><h2>Mobile games</h2></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="enjoy" id="enjoy">
+            <div class="enjoy-content">
+                <h1>Enjoy on all your Devices!</h1>
+                <h3>Watch on Tv, smart phone, Tablet, Laptop, Xbox, Apple Tv and more.</h3>
+                <h1>Watch Everywhere!</h1>
+                <h3>Stream unlimited movies and TV shows everywhere.</h3>
+            </div>
+            <div class="TV">
+                <div class="video-container">
+                    <img src="static/tv.png" alt="Frame" class="overlay-image"/>
+                    <video  autoplay loop muted>
+                        <source src="static/Netflix India.m4v" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="faq" id="faq">
+            <br>
+            <h2>|Frequently Asked Questions</h2>
+            <div class="faq-container" style="align-items:center">
+                <div class="faq-question" onclick="toggleAnswer(1)">
+                    <strong>What is Netflix?</strong>
+                </div>
+                <div class="faq-answer" id="answer1">
+                    <p>Netflix is a streaming service that offers a wide variety of TV shows, movies, documentaries, and more on thousands of internet-connected devices.</p>
+                </div>
+            
+                <div class="faq-question" onclick="toggleAnswer(2)">
+                    <strong>How much does Netflix cost?</strong>
+                </div>
+                <div class="faq-answer" id="answer2">
+                    <p>Netflix offers various subscription plans with different pricing. You can check the latest pricing on the official Netflix website.</p>
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(3)">
+                    <strong>Where can I watch?</strong>
+                </div>
+                <div class="faq-answer" id="answer3">
+                    <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+
+                    <p>You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                </div>  
+                <div class="faq-question" onclick="toggleAnswer(4)">
+                    <strong>How do I cancel?</strong>
+                </div>
+                <div class="faq-answer" id="answer4">
+                    <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                </div>  
+            </div>
+            <div style="text-align:center">
+                <h3> Ready to watch? Enter your email to create or restart your membership</h3>
+                <div class="input">
+                    <input id="email" type="email" placeholder="Email Address" required/>
+                    <button id="submit" onclick="redirect()"><b><h3>Get Started ></h3></b></button>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="footer" id="footers">
+            <br>
+            <p>Questions? Call <a href="tel:000-800-919-1694"><u>000-800-919-1694</u></a></p>
+            <table>
+                <tr>
+                    <td><p><a href="#faq">FAQ</a></p></td>
+                    <td><p><a href="https://help.netflix.com/en/">Help Center</a></p></td>
+                    <td><p><a href="https://www.netflix.com/in/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fyouraccount">Account</a></p></td>
+                    <td><p><a href="https://media.netflix.com/en/">Media Center</a></p></td>
+                </tr>
+                <tr>
+                    <td><p><a href="https://ir.netflix.net/ir-overview/profile/default.aspx">Investor Relations</a></p></td>
+                    <td><p><a href="https://jobs.netflix.com/">Jobs</a></p></td>
+                    <td><p><a href="https://devices.netflix.com/en/">Ways to Watch</a></p></td>
+                    <td><p><a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a></p></td>
+                </tr>
+                <tr>
+                    <td><p><a href="https://help.netflix.com/legal/privacy">Privacy</a></p></td>
+                    <td><p><a href="https://www.netflix.com/in/">Cookie Preference</a></p></td>
+                    <td><p><a href="https://help.netflix.com/legal/corpinfo">Corporate Information</a></p></td>
+                    <td><p><a href="https://help.netflix.com/en/contactus">Contact Us</a></p></td>
+                </tr>
+                <tr>
+                    <td><p><a href="https://fast.com/">Speed Test</a></p></td>
+                    <td><p><a href="https://help.netflix.com/legal/notices">Legal Notice</a></p></td>
+                    <td><p><a href="https://www.netflix.com/in/browse/genre/839338">Only on Netflix</a></p></td>
+                </tr>
+            </table>
+            <p>Netflix Clone India</p>
+        </div>
+    </body>
+</html>
